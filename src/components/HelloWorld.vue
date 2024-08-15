@@ -11,6 +11,12 @@
           <homeCTAButton />
           <socialIcons />
         </v-col>
+        <v-spacer />
+        <v-col
+          cols="4"
+        >
+          <homeAboutMe />
+        </v-col>
       </v-row>
     </v-container>
   </div>
@@ -20,5 +26,6 @@
 import socialIcons from './HomeSocials.vue'
 import homeBodyText from './HomeBodyText.vue'
 import homeCTAButton from './HomeCTAButton.vue'
+import homeAboutMe from './HomeAboutMe.vue'
 
 </script>

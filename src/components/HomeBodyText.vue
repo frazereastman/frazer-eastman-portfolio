@@ -14,7 +14,7 @@
         <p class="body-text">
             I'm a passionate front end developer, who specialises in creating
             modern, responsive web components and pages in 
-            <span>Vue.js</span>
+            <span class="vue-highlight">Vue.js</span>
         </p>
     </div>
 </template>
@@ -32,5 +32,9 @@
     font-family: 'consolas';
 }
 
+.vue-highlight {
+    color: #42b883;
+    font-weight: bold;
+}
 
 </style>
