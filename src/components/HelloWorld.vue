@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <v-container>
-      <v-row>
+  <div class="h-full">
+    <v-container class="h-full">
+      <v-row class="h-full flex items-center">
         <v-col 
           cols="12" 
-          md="6" 
+          sm="6" 
           lg="4"
         >
           <homeBodyText />
-          <socialIcons />
           <homeCTAButton />
+          <socialIcons />
         </v-col>
       </v-row>
     </v-container>
