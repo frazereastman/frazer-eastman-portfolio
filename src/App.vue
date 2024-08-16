@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar >
+    <v-app-bar :elevation="0">
       <navigation-bar />
     </v-app-bar>
     <v-main>
