@@ -45,7 +45,7 @@ const toggleIsOnAboutMe = (value) => {
 
             <div v-else>
                 <p class="py-2 px-4 body-text border-y-2 border-white">
-                    Previous Roles //
+                    Development Roles //
                 </p>
                 <v-expansion-panels 
                     variant="accordion"
@@ -53,10 +53,25 @@ const toggleIsOnAboutMe = (value) => {
                     <v-expansion-panel
                         v-for="i in WorkDetails.length"
                         :key="i"
-                        :text="WorkDetails[i - 1].text"
                         :title="WorkDetails[i - 1].title"
                         class="bg-[#121212] body-text"
-                    />
+                    >
+                        <v-expansion-panel-text>
+                            <div class="border-b-2 pb-2 mb-2">
+                                <p>
+                                    {{ WorkDetails[i - 1].role }}
+                                </p>
+                                <p class="text-xs">
+                                    {{ WorkDetails[i - 1].dateRange }}
+                                </p>
+                            </div>
+                            
+                            <p>
+                                {{ WorkDetails[i - 1].text }}
+                            </p>
+                        </v-expansion-panel-text>
+                    
+                    </v-expansion-panel>
                 </v-expansion-panels>
 
                 <p class="py-2 px-4 body-text border-y-2 border-white">
@@ -84,8 +99,6 @@ const toggleIsOnAboutMe = (value) => {
 </template>
 
 <style scoped>
-
-
 
 .vue-highlight {
     color: #42b883;
