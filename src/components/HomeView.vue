@@ -3,8 +3,11 @@
     <v-container class="h-full">
       <v-row class="h-full flex items-center">
         <v-col 
-          cols="12" 
-          sm="6" 
+          offset-sm="1"
+          offset-md="0"
+          cols="12"
+          sm="10" 
+          md="6" 
           lg="4"
         >
           <homeBodyText />
@@ -13,8 +16,9 @@
         </v-col>
         <v-spacer />
         <v-col
+          class="hidden vuetify-md:block"
           cols="5"
-          lg="5"
+          lg="4"
         >
           <homeAboutMe />
         </v-col>

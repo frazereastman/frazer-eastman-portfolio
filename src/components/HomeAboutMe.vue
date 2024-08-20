@@ -43,7 +43,7 @@ const toggleIsOnAboutMe = (value) => {
                 from all walks of life
             </p>
 
-            <div v-else>
+            <div v-else class="w-full">
                 <p class="py-2 px-4 body-text border-y-2 border-white">
                     Development Roles //
                 </p>
@@ -83,13 +83,13 @@ const toggleIsOnAboutMe = (value) => {
                         :key="i"
                         :text="EducationDetails[i - 1].text"
                         :title="EducationDetails[i - 1].title"
-                        class="bg-[#121212] body-text"
+                        class="bg-[#121212] body-text w-full"
                     />
                 </v-expansion-panels>
             </div>
         </div>
 
-        <div class="w-[150px] h-[30px] outline absolute right-0 top-[-32px] rounder-l-lg flex items-center justify-center">
+        <div class="w-[150px] h-[30px] outline absolute right-0 top-[-33px] rounder-l-lg flex items-center justify-center">
             <p class="body-text">
                 Profile.frzr
             </p>
