@@ -10,7 +10,7 @@ export const fabIconDetails = {
         hoverText: 'Checkout my art projects'
     },
     linkedIn: {
-        url: 'https://www.linkedin.com/in/frazer-eastman-dev/',
+        url: 'https://www.linkedin.com/in/frazer-eastman/',
         icon: 'mdi-linkedin',
         hoverText: 'My linkedIn profile'
     },

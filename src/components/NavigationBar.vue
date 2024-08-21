@@ -1,11 +1,25 @@
-<script>
+<script setup>
+
+import router from '@/router';
+
+const goToContactRoute = () => {
+    router.push('/contact')
+}
+
+const goToHomeRoute = () => {
+    router.push('/')
+}
 
 </script>
 
 <template>
     <div class="flex justify-between p-4 w-full bg-transparent items-center">
 
-        <img src="../assets/website-logo-no-bg.svg" class="w-[50px] h-[50px]"/>
+        <img 
+            src="../assets/website-logo-no-bg.svg" 
+            class="w-[50px] h-[50px] cursor-pointer"
+            @click="goToHomeRoute()"
+        />
 
         <div>
             <v-btn 
@@ -23,6 +37,7 @@
                     aria-label="Contact Me"
                     class="button-text"
                     rounded="0"
+                    @click="goToContactRoute()"
                 >
                     Contact Me
                 </v-btn>

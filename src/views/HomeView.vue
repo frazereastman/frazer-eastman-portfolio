@@ -24,14 +24,20 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <!-- TODO: remove notice once development progresses far enough -->
+    <p class="fixed bottom-0 text-center w-full">
+      Please note my website is early in development, certain features may
+      not work as intended and will be added soon
+    </p>
   </div>
 </template>
 
 <script setup>
-import socialIcons from './HomeSocials.vue'
-import homeBodyText from './HomeBodyText.vue'
-import homeCTAButton from './HomeCTAButton.vue'
-import homeAboutMe from './HomeAboutMe.vue'
+import socialIcons from '../components/home/HomeSocials.vue'
+import homeBodyText from '../components/home/HomeBodyText.vue'
+import homeCTAButton from '../components/home/HomeCTAButton.vue'
+import homeAboutMe from '../components/home/HomeAboutMe.vue'
 
 </script>
 
