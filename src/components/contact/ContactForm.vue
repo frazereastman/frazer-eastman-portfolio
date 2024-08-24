@@ -3,7 +3,10 @@
 </script>
 
 <template>
-  <v-form>
+    <v-form>
+        <h1 class="text-4xl body-text pb-4 text-center">
+            CONTACT ME
+        </h1>
         <v-text-field
             variant="outlined"
             label="Name"
@@ -30,8 +33,7 @@
         > 
             SEND MESSAGE
         </v-btn>
-    </v-form>
-            
+    </v-form>        
 </template>
 
 <style>

@@ -10,6 +10,10 @@ const goToHomeRoute = () => {
     router.push('/')
 }
 
+const goToMyWorkRoute = () => {
+    router.push('/my-work')
+}
+
 </script>
 
 <template>
@@ -26,6 +30,7 @@ const goToHomeRoute = () => {
                 variant="text"
                 aria-label="My Work"
                 class="button-text"
+                @click="goToMyWorkRoute()"
             >
                 My Work
             </v-btn>

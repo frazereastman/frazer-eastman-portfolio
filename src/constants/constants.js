@@ -67,14 +67,29 @@ export const WorkDetails = [
 export const EducationDetails = [
     {
         title: "MSc Comp Sci. Sheffield",
-        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-            ea commodo consequat.`
+        text: `After completing my undergraduate degree, I wanted to challenge
+            myself whilst making the move to sheffield to be with my long term
+            partner. As such I decided to conduct a masters at the University of
+            Sheffield. Despite this being a tough time as I was also working
+            full time, I managed to push through and learnt a lot along the way
+            in fields that I previously explored in much depth such as AI and
+            data modelling. During this time I also again wanted to see what
+            extra-curricular activities I could conduct and stumbled across the
+            sport of Korfball and the incredible people that surround it, and I
+            am still a very active player to this day. I also ran the social 
+            media for the board games society of which I was also an active 
+            member.`
     },
     {
         title: "BSc Software Eng. De Montfort",
-        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-            ea commodo consequat.`
+        text: `After completing an apprenticeship after school, and working for 
+            a number of years, I felt unfurfilled in my role so made the decision
+            to persue university. De Montfort was a great institution for this
+            and allowed me to persue the career path that I had dreamed of.
+            I wanted to make the most of this time, so as well as obtaining a
+            first class degree in software engineering, I also persued extra
+            curricular activities to boost my CV before going down this new,
+            exciting path. I became a course representative, chaired the chess
+            society and was an active social member in the hockey society.`
     },
 ]
