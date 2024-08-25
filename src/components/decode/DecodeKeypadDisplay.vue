@@ -37,6 +37,9 @@ const setColourYellow = (digit) => {
             </span>
         </div>
     </div>
+    <p class="mt-2 ml-8">
+        Attempts: {{ decodeStore.numAttemps }}
+    </p>
 </template>
 
 <style>

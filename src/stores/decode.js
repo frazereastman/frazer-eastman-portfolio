@@ -10,6 +10,7 @@ export const useDecodeStore = defineStore('decode', () => {
   const numAttemps = ref(0)
   const previousAttempts = ref([])
   const codeSubmittedFlag = ref(false)
+  const allowDuplicates = ref(true)
 
   function submitAttempt() {
     codeSubmittedFlag.value = true
@@ -43,11 +44,34 @@ export const useDecodeStore = defineStore('decode', () => {
   }
 
   // Returns true if the number exists in the code but is not an exact match, it will return true for the amount of occurrances
-  function getNumberExists(digit) {
-    // const currentCodeOccurances = currentCode.split(digit).length - 1; 
-    // const correctCodeOccurances = correctCode.split(digit).length - 1;
+  function getNumberExists(digitIndex) {
+    const currentCodeArray = currentCode.value.split('')
+    const correctCodeArray = correctCode.value.split('')
 
-    return correctCode.value.includes(digit)
+    // Get the digit at the specified index.
+    const currentDigit = currentCode.value.substring(digitIndex, digitIndex + 1)
+
+    let currentTrueCount = currentCode.value.split(currentDigit).length - 1;
+    const correctTrueCount = correctCode.value.split(currentDigit).length - 1;
+
+    let numberOfDigitsToShowExists = currentTrueCount > correctTrueCount 
+      ? correctTrueCount 
+      : currentTrueCount
+    
+    // Remove the exact matches from the calculation.
+    for (let i = 0; i < correctCodeArray.length; i++) {
+      if (correctCodeArray[i] === currentCodeArray[i] && correctCodeArray[i] === currentDigit) {
+        numberOfDigitsToShowExists--;
+      }
+    }
+
+    for (let i = 0; i < digitIndex; i ++) { 
+      if (currentCodeArray[i] === currentDigit) {
+        numberOfDigitsToShowExists--
+      }
+    }
+
+    return (correctCodeArray.includes(currentDigit) && numberOfDigitsToShowExists > 0)
   }
 
   function updateCode(digit) {
@@ -66,6 +90,7 @@ export const useDecodeStore = defineStore('decode', () => {
     numAttemps,
     previousAttempts,
     codeSubmittedFlag,
+    allowDuplicates,
     incrementAttempts,
     resetCode,
     generateCode,

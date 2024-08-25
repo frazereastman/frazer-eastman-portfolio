@@ -2,18 +2,11 @@
 import { onMounted, ref } from 'vue';
 import DecodeKeypadDisplay from './DecodeKeypadDisplay.vue';
 import DecodeKeypadNumPad from './DecodeKeypadNumPad.vue';
+import DecodeBottomBar from './DecodeBottomBar.vue';
 import { useDecodeStore } from '@/stores/decode';
 
 const decodeStore = useDecodeStore()
 const currentCode = ref('')
-
-const updateCode = (digit) => {
-  currentCode.value = currentCode.value.concat(digit)
-}
-
-const removeLastDigit = ()=> {
-  currentCode.value = currentCode.value.substring(0, currentCode.value.length - 1);
-}
 
 onMounted(() => {
   decodeStore.generateCode()
@@ -25,6 +18,7 @@ onMounted(() => {
   <div class="w-full flex flex-col">
     <decode-keypad-display />
     <decode-keypad-num-pad />
+    <decode-bottom-bar />
   </div>
 </template>
 
