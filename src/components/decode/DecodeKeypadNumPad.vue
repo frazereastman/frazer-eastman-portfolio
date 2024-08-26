@@ -24,7 +24,7 @@ const submitCode = () => {
 </script>
 
 <template>
-    <div class="flex justify-center flex-wrap mt-4">
+    <div class="flex justify-center flex-wrap mt-4 w-[300px]">
         <decode-keypad-btn 
             v-for="n in 9"  
             :key="n" 

@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full flex flex-col">
+  <div class="w-full flex flex-col justify-center items-center">
     <decode-keypad-display />
     <decode-keypad-num-pad />
     <decode-bottom-bar />

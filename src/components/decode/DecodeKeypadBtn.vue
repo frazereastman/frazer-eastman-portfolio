@@ -27,10 +27,10 @@ const disableBackBtnOnSubmit = computed(() => {
     <v-btn 
         size="80px"
         variant="outlined"
-        class="basis-1/4 m-2 border-primary border-2 rounded-lg flex items-center justify-center"
+        class="w-[80px] m-2 border-primary border-2 rounded-circle flex items-center justify-center"
         :disabled="disableBackBtnOnSubmit"
     >
-        <span class="text-primary text-4xl font-bold">
+        <span class="text-4xl font-bold body-text">
             <v-icon v-if="props.isBackBtn" icon="mdi-arrow-left-bottom" />
             <v-icon 
                 v-else-if="props.isSubmitBtn" 

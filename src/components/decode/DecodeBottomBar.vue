@@ -6,10 +6,23 @@ const decodeStore = useDecodeStore()
 </script>
 
 <template>
-    <div class="mt-2 px-8">
-        <v-switch 
+    <div class="mt-2 px-8 w-full">
+        <div class="flex justify-between">
+            <p class="mt-2 text-xl body-text">
+                Attempts: {{ decodeStore.numAttemps }}
+            </p>
+            <v-btn
+                @click="decodeStore.toggleShowResetCode"
+                icon="mdi-refresh"
+                density="compact"
+            />
+        </div>
+        
+        <v-switch
             v-model="decodeStore.allowDuplicates"
+            color="white"
             label="Allow Duplicates"
+            class="body-text"
             inset
         />
     </div>

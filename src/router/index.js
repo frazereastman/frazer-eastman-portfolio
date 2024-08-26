@@ -11,10 +11,12 @@ const routes = [
   },
   {
     path: '/contact',
+    name: 'contact',
     component: ContactView
   },
   {
     path: '/my-work',
+    name: 'my-work',
     component: MyWorkView
   }
 ]
