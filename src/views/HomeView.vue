@@ -27,8 +27,7 @@
 
     <!-- TODO: remove notice once development progresses far enough -->
     <p class="fixed bottom-0 text-center w-full">
-      Please note my website is early in development, certain features may
-      not work as intended and will be added soon
+      Please note I am still developing parts of the site.
     </p>
   </div>
 </template>

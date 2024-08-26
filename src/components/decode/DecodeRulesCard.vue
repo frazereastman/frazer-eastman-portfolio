@@ -8,7 +8,7 @@
         color="surface-variant"
         text='HOW TO PLAY "DECODE"'
         variant="flat"
-        class="my-4"
+        class="my-4 mr-2"
       ></v-btn>
     </template>
 
