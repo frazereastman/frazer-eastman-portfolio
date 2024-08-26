@@ -30,7 +30,7 @@ const toggleIsOnAboutMe = (value) => {
                 EDUCATION / WORK
             </v-btn>
         </div>
-        <div class="flex overflow-y-scroll border-t-2">
+        <div class="flex overflow-y-scroll border-t-2 h-full">
             <p v-if="isOnAboutMe" class="body-text p-4">
                 Originally from a small town just outside London, I now live and
                 work in Sheffield. A technology addict since before I can remember, 

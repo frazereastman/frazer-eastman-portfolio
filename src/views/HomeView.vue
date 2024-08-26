@@ -18,7 +18,7 @@
         <v-col
           class="hidden vuetify-md:block"
           cols="5"
-          lg="4"
+          lg="5"
         >
           <homeAboutMe />
         </v-col>
@@ -27,7 +27,7 @@
 
     <!-- TODO: remove notice once development progresses far enough -->
     <p class="fixed bottom-0 text-center w-full">
-      Please note I am still developing parts of the site.
+      Please note I am still developing the site.
     </p>
   </div>
 </template>
