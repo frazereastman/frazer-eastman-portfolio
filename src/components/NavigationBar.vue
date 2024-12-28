@@ -14,6 +14,10 @@ const goToMyWorkRoute = () => {
     router.push('/my-work')
 }
 
+const goToAboutRoute = () => {
+    router.push('/about-me')
+}
+
 </script>
 
 <template>
@@ -33,6 +37,14 @@ const goToMyWorkRoute = () => {
                 @click="goToMyWorkRoute()"
             >
                 My Work
+            </v-btn>
+            <v-btn 
+                variant="text"
+                aria-label="My Work"
+                class="button-text"
+                @click="goToAboutRoute()"
+            >
+                About Me
             </v-btn>
             <v-hover v-slot:default="{ isHovering, props }">
                 <v-btn 

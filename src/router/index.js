@@ -3,6 +3,7 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import MyWorkView from '../views/MyWorkView.vue'
+import AboutMeView from '../views/AboutMeView.vue'
 
 const routes = [
   { 
@@ -18,6 +19,11 @@ const routes = [
     path: '/my-work',
     name: 'my-work',
     component: MyWorkView
+  },
+  {
+    path: '/about-me',
+    name: 'about-me',
+    component: AboutMeView
   }
 ]
 
