@@ -4,9 +4,9 @@
 
 <template>
     <div>
-        <h1 class="title-text">
+        <h1 class="neonText">
             Hello, my name is <br />
-            <span class="title-text-large">
+            <span>
                 Frazer Eastman.
             </span>
         </h1>
@@ -24,7 +24,6 @@
 .title-text {
     font-family: 'consolas';
     font-size: 2rem;
-    color: aqua;
     font-weight: 600;
 }
 

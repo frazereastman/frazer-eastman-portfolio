@@ -1,11 +1,11 @@
 <script setup></script>
 
 <template>
-    <div class="mb-3">
+    <div class="flex flex-col justify-center">
         <h1 class="font-bold text-3xl mb-3">
-            About Me
+            It's nice to meet you!
         </h1>
-        <p>
+        <p class="md:text-xl">
             Originally from a small town just outside London, I now live and
             work in Sheffield. A technology addict since before I can remember, 
             I am a highly creative individual who loves to create content in

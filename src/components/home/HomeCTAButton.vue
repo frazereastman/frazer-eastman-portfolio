@@ -18,7 +18,7 @@ const goToMyWorkView = () => {
                 :append-icon="isHovering ? 'mdi-arrow-right-thick' : ''"
                 @click="goToMyWorkView()"
             >
-                See Proof
+                See Work
             </v-btn>
         </template>
     </v-hover>

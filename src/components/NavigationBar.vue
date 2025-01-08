@@ -1,6 +1,14 @@
 <script setup>
 
 import router from '@/router';
+import { computed, onMounted } from 'vue';
+
+const props = defineProps({
+    transparent: {
+        type: Boolean,
+        required: true
+    }
+})
 
 const goToContactRoute = () => {
     router.push('/contact')
@@ -21,8 +29,10 @@ const goToAboutRoute = () => {
 </script>
 
 <template>
-    <div class="flex justify-between p-4 w-full bg-transparent items-center">
-
+    <div 
+        class="flex justify-between p-4 my-4 w-full items-center"
+        :class="transparent ? 'bg-transparent' : 'home-bg'"
+    >
         <img 
             src="../assets/website-logo-no-bg.svg" 
             class="w-[50px] h-[50px] cursor-pointer"
