@@ -94,6 +94,15 @@
   background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #121212 26px ), repeating-linear-gradient( #1a1a1a55, #1a1a1a );
 }
 
+.my-work-bg {
+  background-color: #ffffff;
+  opacity: 0.1;
+  background-image:  linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #ffffff 25%);
+  background-position:  11px 0, 11px 0, 0 0, 0 0;
+  background-size: 11px 11px;
+  background-repeat: repeat;
+}
+
 @media only screen and (max-width: 768px) {
   .zig-zag-line {
     --a: 90deg; /* control the angle */

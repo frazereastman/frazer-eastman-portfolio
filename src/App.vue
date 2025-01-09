@@ -1,5 +1,5 @@
 <template>
-	<v-app :class="isOnHomeRoute ? 'home-bg' : 'bg-white'">
+	<v-app :class="[isOnHomeRoute ? 'home-bg' : 'bg-white']">
 		<v-app-bar
 			:elevation="0"
 			class="bg-transparent"
@@ -16,7 +16,7 @@
 	const route = useRoute();
 
 	const isOnHomeRoute = computed(() => {
-		return route.path === '/';
+		return route.path === '/' | route.path === '/my-work' ;
 	});
 </script>
 
