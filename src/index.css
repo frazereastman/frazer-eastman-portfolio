@@ -94,16 +94,32 @@
   background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #121212 26px ), repeating-linear-gradient( #1a1a1a55, #1a1a1a );
 }
 
-/* zig zag border code, credit to css-shape.com */
-.zig-zag-line {
-  --a: 90deg; /* control the angle */
-  --s: 60px; /* size of the zig-zag */
-  --b: 25px;  /* control the thickness */
-  
-  background: #df382c;
-  width: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
-  min-height: 250px;
-  --_g:100% var(--s) repeat-y conic-gradient(from calc(90deg - var(--a)/2) at left,
-    #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
-  mask: var(--b) 50%/var(--_g) exclude,0 50%/var(--_g);
+@media only screen and (max-width: 768px) {
+  .zig-zag-line {
+    --a: 90deg; /* control the angle */
+    --s: 60px; /* size of the zig-zag */
+    --b: 25px;  /* control the thickness */
+    
+    background: #bf4d28;
+    height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+    width: 100%;
+    --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+      #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+    mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .zig-zag-line {
+    --a: 90deg; /* control the angle */
+    --s: 60px; /* size of the zig-zag */
+    --b: 25px;  /* control the thickness */
+    
+    background: #bf4d28;
+    width: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+    min-height: 250px;
+    --_g:100% var(--s) repeat-y conic-gradient(from calc(90deg - var(--a)/2) at left,
+      #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+    mask: var(--b) 50%/var(--_g) exclude,0 50%/var(--_g);
+  }
 }

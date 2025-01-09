@@ -6,16 +6,17 @@ import AboutImage from '../components/about/AboutImage.vue'
 
 <template>
 
-    <v-container>
-        <div class="flex flex-col md:flex-row p-8 bg-[#FDDBBB] lg:justify-center">
-            <div class="max-h-[200px] max-w-[200px] w-200px md:w-auto md:max-h-[400px]">
-                <about-image />
-            </div>
-            <about-header />
+    <v-container class="flex flex-col items-center md:flex-row p-8 bg-[#FDDBBB] md:mt-4">
+        <div class="flex justify-center items-center mb-4 md:mb-0">
+            <about-image />
         </div>
+        <div class="w-full md:w-[60px] py-4 md:mx-6 h-full">
+            <div class="zig-zag-line md:zig-zag-line"></div>
+        </div>
+        <about-header />
     </v-container>
 
-    <v-container>
+    <v-container class="bg-[#A2D2DF] mt-4 md:my-4">
         <about-timeline />
     </v-container>
 </template>

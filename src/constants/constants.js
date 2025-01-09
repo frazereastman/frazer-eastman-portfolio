@@ -63,7 +63,6 @@ export const timelineDetails = [
     {
         date: "Sept 2021",
         title: "MSc Comp Sci - The University of Sheffield",
-        dot: "blue",
         description: `After completing my undergraduate degree, I moved to the city of 
             Sheffield to be with my long-term partner and decided I wanted to 
             challenge myself academically. As such I decided to complete a 
@@ -85,7 +84,6 @@ export const timelineDetails = [
     {
         date: "Sept 2018",
         title: "BSc Software Eng - De Montfort University",
-        dot: "blue",
         description: `After completing an apprenticeship after school, and working for 
             a number of years, I felt unfulfilled in my role so made the 
             decision to pursue university. De Montfort was a great institution 

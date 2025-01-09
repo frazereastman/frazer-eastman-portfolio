@@ -3,10 +3,10 @@
 </script>
 
 <template>
-	<h1 class="text-[3rem]">
+	<h1 class="text-[3rem] font-bold md:px-4">
 		My Timeline
 	</h1>
-	<v-timeline align="start" side="end" class="overflow-hidden">
+	<v-timeline align="start" side="end" class="overflow-hidden md:px-4">
 		<v-timeline-item
 			v-for="(timelineEntry, i) in timelineDetails"
 			:key="i"

@@ -33,8 +33,10 @@ watch(width, (newWidth) => {
           lg="4"
         >
           <p class="body-text">
-            Feel free to check out my github page, to see the code for this, or
-            any other projects I may work on outside of work...
+            I am planning on working on my blog / write ups of my development 
+            experience here in the near future, but until then Feel free to 
+            check out my github page, to see the code for this, or any other 
+            projects I may work on outside of work...
             <br /><br />
             but since you're already here why don't I give you a practical
             example, that you can play around with yourself. I have purposely

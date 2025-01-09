@@ -1,13 +1,12 @@
 <script setup></script>
 
 <template>
-    <div class="flex object-contain h-full">
+    <div class="flex h-[200px] w-[200px]">
         <img 
             src="../../assets/about-me-image.jpg" 
             alt="Image of the developer"
-            class="object-cover rounded-full md:object-contain h-full"
+            class="object-cover rounded-full"
         >
-        <div class="zig-zag-line mx-4 hidden md:block"></div>
     </div>
 </template>
 
