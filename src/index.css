@@ -1,118 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #ffffff #121212;
-  }
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #ffffff #121212;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #121212;
-  }
+*::-webkit-scrollbar-track {
+	background: #121212;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #ffffff;
-    border-radius: 20px;
-    border: 3px solid #ffffff;
-  }
+*::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	border-radius: 20px;
+	border: 3px solid #ffffff;
+}
 
-  .title-text {
-    font-family: 'consolas';
-    font-size: 2rem;
-    font-weight: 600;
+.title-text {
+	font-family: 'consolas, monospace';
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 .body-text {
-    font-family: 'consolas';
+	font-family: 'consolas, monospace';
 }
 
 .button-text {
-    color: white;
-    font-family: 'consolas';
-    font-size: 1rem;
+	color: white;
+	font-family: 'consolas, monospace';
+	font-size: 1rem;
 }
 
 .flicker-animation {
-  will-change: text-shadow;
+	will-change: text-shadow;
 }
 
 /* Flickering animation */
 @keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+	0%,
+	18%,
+	22%,
+	25%,
+	53%,
+	57%,
+	100% {
+		text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa,
+			0 0 100px #0fa, 0 0 150px #0fa;
+	}
 
-      text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #0fa,
-      0 0 80px #0fa,
-      0 0 90px #0fa,
-      0 0 100px #0fa,
-      0 0 150px #0fa;
-  
-  }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
+	20%,
+	24%,
+	55% {
+		text-shadow: none;
+	}
 }
 
 .neonText {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  animation: flicker 1.5s infinite alternate;   
-  will-change: text-shadow; 
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+	animation: flicker 1.5s infinite alternate;
+	will-change: text-shadow;
 }
 
 .home-bg {
-  background-color: #000000;
-  opacity: 1;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #121212 26px ), repeating-linear-gradient( #1a1a1a55, #1a1a1a );
+	background-color: #000000;
+	opacity: 1;
+	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #121212 26px),
+		repeating-linear-gradient(#1a1a1a55, #1a1a1a);
 }
 
 .my-work-bg {
-  background-color: #ffffff;
-  opacity: 0.1;
-  background-image:  linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #ffffff 25%);
-  background-position:  11px 0, 11px 0, 0 0, 0 0;
-  background-size: 11px 11px;
-  background-repeat: repeat;
+	background-color: #ffffff;
+	opacity: 0.1;
+	background-image: linear-gradient(135deg, #000000 25%, transparent 25%),
+		linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%),
+		linear-gradient(315deg, #000000 25%, #ffffff 25%);
+	background-position: 11px 0, 11px 0, 0 0, 0 0;
+	background-size: 11px 11px;
+	background-repeat: repeat;
 }
 
 @media only screen and (max-width: 768px) {
-  .zig-zag-line {
-    --a: 90deg; /* control the angle */
-    --s: 60px; /* size of the zig-zag */
-    --b: 25px;  /* control the thickness */
-    
-    background: #bf4d28;
-    height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
-    width: 100%;
-    --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
-      #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
-    mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
-  }
+	.zig-zag-line {
+		--a: 90deg; /* control the angle */
+		--s: 60px; /* size of the zig-zag */
+		--b: 25px; /* control the thickness */
+
+		background: #bf4d28;
+		height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+		width: 100%;
+		--_g: var(--s) repeat-x
+			conic-gradient(from calc(var(--a) / -2) at bottom, #0000, #000 1deg calc(var(--a) - 1deg), #0000 var(--a));
+		mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
+	}
 }
 
 @media only screen and (min-width: 768px) {
-  .zig-zag-line {
-    --a: 90deg; /* control the angle */
-    --s: 60px; /* size of the zig-zag */
-    --b: 25px;  /* control the thickness */
-    
-    background: #bf4d28;
-    width: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
-    min-height: 250px;
-    --_g:100% var(--s) repeat-y conic-gradient(from calc(90deg - var(--a)/2) at left,
-      #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
-    mask: var(--b) 50%/var(--_g) exclude,0 50%/var(--_g);
-  }
+	.zig-zag-line {
+		--a: 90deg; /* control the angle */
+		--s: 60px; /* size of the zig-zag */
+		--b: 25px; /* control the thickness */
+
+		background: #bf4d28;
+		width: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+		min-height: 250px;
+		--_g: 100% var(--s) repeat-y
+			conic-gradient(
+				from calc(90deg - var(--a) / 2) at left,
+				#0000,
+				#000 1deg calc(var(--a) - 1deg),
+				#0000 var(--a)
+			);
+		mask: var(--b) 50% / var(--_g) exclude, 0 50% / var(--_g);
+	}
 }
