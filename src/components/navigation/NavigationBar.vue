@@ -49,7 +49,7 @@ watch(width, (newWidth) => {
             :class="transparent ? 'bg-transparent' : 'home-bg'"
         >
             <img 
-                src="../assets/website-logo-no-bg.svg" 
+                src="../../assets/website-logo-no-bg.svg" 
                 class="w-[50px] h-[50px] cursor-pointer"
                 @click="goToHomeRoute()"
             />

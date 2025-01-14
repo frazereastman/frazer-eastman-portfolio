@@ -34,7 +34,7 @@
 
 </template>
 
-<script>
+<script setup>
 import router from '@/router';
 import { computed, onMounted } from 'vue';
 
