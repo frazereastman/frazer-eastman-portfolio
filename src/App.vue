@@ -1,11 +1,6 @@
 <template>
 	<v-app :class="[isOnHomeRoute ? 'home-bg' : 'bg-white']">
-		<v-app-bar
-			:elevation="0"
-			class="bg-transparent"
-    >
-			<navigation-bar :transparent="isOnHomeRoute"/>
-		</v-app-bar>
+		<navigation-bar :transparent="isOnHomeRoute"/>
 		<v-main>
 			<router-view />
 		</v-main>
