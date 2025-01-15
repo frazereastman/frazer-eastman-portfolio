@@ -17,13 +17,13 @@
 
 <style scoped>
 	.title-text {
-		font-family: 'consolas, monospace';
+		font-family: 'consolas', monospace;
 		font-size: 2rem;
 		font-weight: 600;
 	}
 
 	.body-text {
-		font-family: 'consolas, monospace';
+		font-family: 'consolas', monospace;
 	}
 
 	.vue-highlight {

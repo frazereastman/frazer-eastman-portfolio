@@ -44,6 +44,6 @@
 
 <style scoped>
 	.body-text {
-		font-family: 'consolas, monospace';
+		font-family: 'consolas', monospace;
 	}
 </style>

@@ -23,18 +23,18 @@
 }
 
 .title-text {
-	font-family: 'consolas, monospace';
+	font-family: 'consolas', monospace;
 	font-size: 2rem;
 	font-weight: 600;
 }
 
 .body-text {
-	font-family: 'consolas, monospace';
+	font-family: 'consolas', monospace;
 }
 
 .button-text {
 	color: white;
-	font-family: 'consolas, monospace';
+	font-family: 'consolas', monospace;
 	font-size: 1rem;
 }
 
