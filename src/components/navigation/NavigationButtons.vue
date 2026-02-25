@@ -4,18 +4,26 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
-        class="button-text "
-        @click="goToMyWorkRoute()"
+        class="button-text"
+        @click="goToAboutRoute()"
     >
-        My Work
+        About
     </v-btn>
     <v-btn 
         variant="text"
         aria-label="My Work"
-        class="button-text"
-        @click="goToAboutRoute()"
+        class="button-text "
+        @click="goToMyWorkRoute()"
     >
-        About Me
+        Projects
+    </v-btn>
+    <v-btn 
+        variant="text"
+        aria-label="My Work"
+        class="button-text "
+        @click="goToMyWorkRoute()"
+    >
+        Blog
     </v-btn>
     <v-hover v-slot:default="{ isHovering, props }">
         <v-btn 
@@ -27,7 +35,7 @@
             rounded="0"
             @click="goToContactRoute()"
         >
-            Contact Me
+            Contact
         </v-btn>
     </v-hover>
 </div>
