@@ -16,10 +16,10 @@
 </script>
 
 <style scoped>
-	.home-bg {
+	/* .home-bg {
 		background-color: #000000;
 		opacity: 1;
 		background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #121212 26px),
 			repeating-linear-gradient(#1a1a1a55, #1a1a1a);
-	}
+	} */
 </style>

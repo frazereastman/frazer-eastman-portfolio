@@ -3,7 +3,7 @@
         <h1 class="font-bold text-5xl mb-3">
             Ways of working.
         </h1>
-        <v-row>
+        <v-row class="mt-4">
             <v-col 
                 cols="12" 
                 sm="6" 
@@ -23,10 +23,10 @@
 <script setup>
 
 const sliderValues = {
-    vue: 80,
-    react: 70,
-    node: 60,
-    typescript: 50,
+    "Agile Development": 80,
+    "Accessible Development": 90,
+    "UI Design": 60,
+    "UX": 50,
 }
 
 </script>

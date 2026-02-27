@@ -1,19 +1,30 @@
 <template>
-    <div class="skills-logos-wrapper d-flex flex-wrap gap-4">
-        <img :src="reactlogo" alt="React logo" />
-        <img :src="vuelogo" alt="Vue.js logo" />
-        <img :src="tailwindlogo" alt="Tailwind CSS logo" />
-        <img :src="nodelogo" alt="Node.js logo" />
-        <img :src="typescriptLogo" alt="TypeScript logo" />
+    <div class="skills-logos-wrapper d-flex justify-evenly flex-wrap gap-4">
+        <dev-skills-tile v-for="(tile, index) in tiles" 
+            :key="index" 
+            :tileTitle="tile.title" 
+            :Image="tile.image"
+        ></dev-skills-tile>
     </div>
 </template>
 
 <script setup>
-import typescriptLogo from '../../assets/typescript-logo.svg';
-import nodelogo from '../../assets/node-logo.svg';
-import vuelogo from '../../assets/vue-logo.svg';
-import tailwindlogo from '../../assets/tailwind-logo.svg';
-import reactlogo from '../../assets/react-logo.svg';
+
+const tiles = [
+    { title: 'React.js', image: 'react' },
+    { title: 'Vue.js', image: 'vue' },
+    { title: 'Tailwind CSS', image: 'tailwind' },
+    { title: 'Node.js', image: 'node' },
+    { title: 'TypeScript', image: 'typescript' },
+    { title: 'GitHub', image: 'github' },
+    { title: 'Jira', image: 'jira' },
+    { title: 'MySQL', image: 'mysql' },
+    { title: 'Sass', image: 'sass' },
+    { title: 'Vuetify', image: 'vuetify' },
+    { title: 'MUI', image: 'mui' },
+    { title: 'Figma', image: 'figma' }
+]
+
 </script>
 
 <style scoped>

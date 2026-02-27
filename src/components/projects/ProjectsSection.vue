@@ -7,6 +7,7 @@
             <v-col 
                 cols="12" 
                 sm="6" 
+                lg="4"
                 v-for="(project, index) in 4" 
                 :key="index"
             >

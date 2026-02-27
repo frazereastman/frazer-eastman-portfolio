@@ -23,6 +23,10 @@
 	border: 3px solid #ffffff;
 }
 
+*{
+	font-family: 'League Spartan', sans-serif;
+}
+
 .title-text {
 	font-family: 'consolas', monospace;
 	font-size: 2rem;
@@ -70,13 +74,13 @@
 	animation: flicker 1.5s infinite alternate;
 	will-change: text-shadow;
 }
-
+/* 
 .home-bg {
 	background-color: #000000;
 	opacity: 1;
 	background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #121212 26px),
 		repeating-linear-gradient(#1a1a1a55, #1a1a1a);
-}
+} */
 
 .my-work-bg {
 	background-color: #ffffff;

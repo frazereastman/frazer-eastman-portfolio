@@ -1,13 +1,13 @@
 <template>
-  <div class="h-full">
+  <div class="h-screen">
     <v-container class="h-full">
       <v-row class="h-full flex items-center">
         <v-col 
           offset-sm="1"
           offset-md="0"
           cols="12"
-          sm="10" 
-          md="6" 
+          sm="10"
+          md="6"
           lg="4"
         >
           <homeBodyText />
@@ -18,7 +18,7 @@
     </v-container>
   </div>
 
-  <div class="absolute w-full">
+  <div class="w-full">
     <v-container class="mt-8">
       <v-row>
         <v-col 
@@ -34,9 +34,8 @@
           <dev-skills />
         </v-col>
       </v-row>
-      <ways-of-working-section />
-      <projects-section />
       <blog-section />
+      <contact-section />
     </v-container>
   </div>
 </template>
@@ -46,8 +45,9 @@ import socialIcons from '../components/home/HomeSocials.vue'
 import homeBodyText from '../components/home/HomeBodyText.vue'
 import homeCTAButton from '../components/home/HomeCTAButton.vue'
 import devSkills from '../components/devSkills/DevSkills.vue'
-import aboutSection from '../components/about/AboutHeader.vue'
+import aboutSection from '../components/about/AboutSection.vue'
 </script>
 
 <style scoped>
+
 </style>

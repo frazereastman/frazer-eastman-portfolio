@@ -21,6 +21,7 @@ const props = defineProps({
             </p>
             <v-slider
                 readonly
+                color="white"
                 :model-value="sliderValue"
             ></v-slider>
         </div>

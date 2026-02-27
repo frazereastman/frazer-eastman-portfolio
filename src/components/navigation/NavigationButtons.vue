@@ -20,7 +20,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
-        class="button-text "
+        class="button-text"
         @click="goToMyWorkRoute()"
     >
         Blog
@@ -31,7 +31,7 @@
             variant="outlined"
             :append-icon="isHovering ? 'mdi-email-open-outline' : 'mdi-email-outline'"
             aria-label="Contact Me"
-            class="button-text mx-4 md:mx-0"
+            class="button-text mx-4 md:mx-0 bg-white text-black rounded"
             rounded="0"
             @click="goToContactRoute()"
         >
