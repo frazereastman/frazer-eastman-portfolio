@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
 import MyWorkView from '../views/MyWorkView.vue'
 import AboutMeView from '../views/AboutMeView.vue'
+import BlogsView from '../views/BlogsView.vue'
 
 const routes = [
   { 
@@ -24,6 +25,11 @@ const routes = [
     path: '/about-me',
     name: 'about-me',
     component: AboutMeView
+  },
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component: BlogsView
   }
 ]
 

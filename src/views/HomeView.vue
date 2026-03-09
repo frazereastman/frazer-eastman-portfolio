@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen w-full overflow-hidden">
     <v-container class="h-full">
       <v-row class="h-full flex items-center">
         <v-col 
@@ -23,19 +23,20 @@
       <v-row>
         <v-col 
           cols="12"
-          md="6" 
+          md="8" 
+          offset-md="2"
+          lg="10"
+          offset-lg="1"
         >
           <about-section />
-        </v-col>
-        <v-col 
-          cols="12"
-          md="6" 
-        >
+          <v-divider class="my-6" gradient></v-divider>
           <dev-skills />
+          <v-divider class="my-6"></v-divider>
+          <blog-section />
+          <v-divider class="my-6"></v-divider>
+          <contact-section />
         </v-col>
       </v-row>
-      <blog-section />
-      <contact-section />
     </v-container>
   </div>
 </template>
@@ -46,6 +47,7 @@ import homeBodyText from '../components/home/HomeBodyText.vue'
 import homeCTAButton from '../components/home/HomeCTAButton.vue'
 import devSkills from '../components/devSkills/DevSkills.vue'
 import aboutSection from '../components/about/AboutSection.vue'
+import { space } from 'postcss/lib/list'
 </script>
 
 <style scoped>

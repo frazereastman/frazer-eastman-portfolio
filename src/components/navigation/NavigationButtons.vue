@@ -21,7 +21,7 @@
         variant="text"
         aria-label="My Work"
         class="button-text"
-        @click="goToMyWorkRoute()"
+        @click="goToBlogRoute()"
     >
         Blog
     </v-btn>
@@ -60,5 +60,9 @@ const goToMyWorkRoute = () => {
 
 const goToAboutRoute = () => {
     router.push('/about-me')
+}
+
+const goToBlogRoute = () => {
+    router.push('/blogs')
 }
 </script>

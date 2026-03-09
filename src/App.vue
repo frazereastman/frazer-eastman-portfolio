@@ -1,7 +1,7 @@
 <template>
-	<v-app :class="[isOnHomeRoute ? 'home-bg' : 'bg-white']">
+	<v-app :class="[isOnHomeRoute ? 'home-bg' : 'bg-white']" style="overflow-x: hidden;">
 		<navigation-bar :transparent="isOnHomeRoute"/>
-		<v-main>
+		<v-main style="padding: 0; overflow-x: hidden;">
 			<router-view />
 		</v-main>
 	</v-app>

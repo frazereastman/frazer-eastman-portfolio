@@ -9,7 +9,7 @@
             writing code following best practices. Clean architecture. 
             Thoughtful patterns. The kind of codebase I'd be happy to inherit.
         </p>
-        <div class="d-flex gap-4 justify-center">
+        <div class="d-flex gap-4 justify-center flex-wrap">
             <v-btn 
                 variant="outlined" 
                 color="white"

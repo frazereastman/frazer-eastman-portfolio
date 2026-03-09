@@ -27,6 +27,10 @@ const goToMyWorkRoute = () => {
     router.push('/my-work')
 }
 
+const goToBlogRoute = () => {
+    router.push('/blogs')
+} 
+
 const goToAboutRoute = () => {
     router.push('/about-me')
 }
