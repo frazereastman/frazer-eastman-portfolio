@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <h1 class="font-bold text-5xl mb-3">
+    <section id="about-section">
+        <h1 class="font-bold text-5xl mb-3 pt-4">
             About Me.
         </h1>
         <p class="font-semibold">

@@ -13,6 +13,11 @@ const props = defineProps({
     }
 })
 
+const isLightMode = computed(() => {
+    const currentRoute = router.currentRoute.value.path;
+    return currentRoute === '/blogs';
+})
+
 const drawer = ref(false)
 
 const goToContactRoute = () => {
@@ -55,6 +60,7 @@ watch(width, (newWidth) => {
             <img 
                 src="../../assets/website-logo-no-bg.svg" 
                 class="w-[50px] h-[50px] cursor-pointer"
+                :class="isLightMode ? 'invert' : ''"
                 @click="goToHomeRoute()"
             />
             <template class="hidden md:flex">

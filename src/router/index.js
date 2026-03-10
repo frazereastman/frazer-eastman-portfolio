@@ -30,7 +30,14 @@ const routes = [
     path: '/blogs',
     name: 'blogs',
     component: BlogsView
-  }
+  },
+  {
+    path: '/blogs/:name',
+    name: 'blog-detail',
+    component: BlogsView
+  },
+  
+
 ]
 
 const router = createRouter({

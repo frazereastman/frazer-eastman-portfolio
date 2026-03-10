@@ -4,7 +4,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
-        class="button-text"
+        :class="isLightMode ? 'button-text-dark' : 'button-text'"
         @click="goToAboutRoute()"
     >
         About
@@ -12,7 +12,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
-        class="button-text "
+        :class="isLightMode ? 'button-text-dark' : 'button-text'"
         @click="goToMyWorkRoute()"
     >
         Projects
@@ -20,7 +20,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
-        class="button-text"
+        :class="isLightMode ? 'button-text-dark' : 'button-text'"
         @click="goToBlogRoute()"
     >
         Blog
@@ -44,7 +44,18 @@
 
 <script setup>
 import router from '@/router';
-import { computed, onMounted } from 'vue';
+import { computed, nextTick } from 'vue';
+
+const isLightMode = computed(() => {
+    const currentRoute = router.currentRoute.value.path;
+    return currentRoute === '/blogs';
+})
+
+const scrollToAboutSection = () => {
+    const section = document.getElementById('about-section');
+    if (!section) return;
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 const goToContactRoute = () => {
     router.push('/contact')
@@ -59,7 +70,17 @@ const goToMyWorkRoute = () => {
 }
 
 const goToAboutRoute = () => {
-    router.push('/about-me')
+    const currentRoute = router.currentRoute.value.path;
+
+    if (currentRoute === '/') {
+        scrollToAboutSection();
+        return;
+    }
+
+    router.push('/').then(() => {
+        // Wait for the home view to mount before scrolling
+        nextTick(() => scrollToAboutSection());
+    });
 }
 
 const goToBlogRoute = () => {
