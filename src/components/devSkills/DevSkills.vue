@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <h1 class="font-bold text-5xl mb-3">
+    <section id="what-i-do">
+        <h1 class="font-bold text-5xl mb-3 mt-4">
             What I Do.
         </h1>
         <dev-skills-logos />
@@ -14,6 +14,7 @@
                 variant="outlined" 
                 color="white"
                 size="x-large"
+                to="/projects"
             >
                 Projects
             </v-btn>
@@ -21,6 +22,8 @@
                 variant="outlined"
                 class="bg-white text-black rounded"
                 size="x-large"
+                href="/resume.pdf"
+                target="_blank"
             >
                 Resume
             </v-btn>
@@ -28,6 +31,7 @@
                 variant="outlined" 
                 color="white"
                 size="x-large"
+                to="/blogs"
             >
                 Blogs
             </v-btn>
@@ -37,6 +41,7 @@
 
 <script setup>
 import devSkillsLogos from './DevSkillsLogos.vue'
+import router from '@/router';
 
 </script>
 

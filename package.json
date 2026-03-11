@@ -11,12 +11,14 @@
     "@emailjs/browser": "^4.4.1",
     "@vueuse/core": "^11.0.3",
     "core-js": "^3.37.1",
+    "markdown-it": "^14.1.1",
     "roboto-fontface": "*",
     "vue": "^3.4.31",
     "vuetify": "^3.6.11"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
+    "@tailwindcss/typography": "^0.5.19",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",

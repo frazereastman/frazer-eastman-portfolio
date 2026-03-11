@@ -13,7 +13,7 @@
         variant="text"
         aria-label="My Work"
         :class="isLightMode ? 'button-text-dark' : 'button-text'"
-        @click="goToMyWorkRoute()"
+        @click="goToProjectsRoute()"
     >
         Projects
     </v-btn>
@@ -48,7 +48,7 @@ import { computed, nextTick } from 'vue';
 
 const isLightMode = computed(() => {
     const currentRoute = router.currentRoute.value.path;
-    return currentRoute === '/blogs';
+    return currentRoute.includes('/blogs') || currentRoute.includes('/projects');
 })
 
 const scrollToAboutSection = () => {
@@ -57,8 +57,23 @@ const scrollToAboutSection = () => {
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+const scrollToContactSection = () => {
+    const section = document.getElementById('contact-section');
+    if (!section) return;
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 const goToContactRoute = () => {
-    router.push('/contact')
+    const currentRoute = router.currentRoute.value.path;
+
+    if (currentRoute === '/') {
+        scrollToContactSection();
+        return;
+    }
+
+    router.push('/').then(() => {
+        nextTick(() => scrollToContactSection());
+    });
 }
 
 const goToHomeRoute = () => {
@@ -67,6 +82,10 @@ const goToHomeRoute = () => {
 
 const goToMyWorkRoute = () => {
     router.push('/my-work')
+}
+
+const goToProjectsRoute = () => {
+    router.push('/projects')
 }
 
 const goToAboutRoute = () => {

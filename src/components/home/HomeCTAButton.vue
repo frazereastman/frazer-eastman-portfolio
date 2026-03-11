@@ -2,6 +2,13 @@
 import router from '@/router';
 
 const goToMyWorkView = () => {
+    const target = document.getElementById('what-i-do')
+
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' })
+        return
+    }
+
     router.push('/my-work')
 }
 

@@ -1,25 +1,15 @@
 <script setup>
+import { blogPosts } from '@/data/blogPosts';
 
-
-const blogsObject = [
-    {
-        title: "How accessibility first development leads to better web applications.",
-        date: "June 15, 2024",
-        content: "This is the content of blog post 1.",
-        route: "accessibility-first-development"
-    },
-    {
-        title: "Blog Post 2",
-        date: "June 20, 2024",
-        content: "This is the content of blog post 2.",
-        route: "blog-post-2"
-    }
-]
+const blogsObject = blogPosts;
 
 </script>
 
 <template>
     <v-container class="mt-16">
+        <v-btn @click="$router.push('/')" color="black" variant="text" class="mb-4" prepend-icon="mdi-arrow-left">
+            back to home
+        </v-btn>
         <h1 class="text-h2">Blogs</h1>
         <p class="my-4">
             This blog is where I share insights from my work as a software 
@@ -30,7 +20,7 @@ const blogsObject = [
             to the developer community.
         </p>
         <div>
-            <v-card v-for="blog in blogsObject" :key="blog.title" class="mb-4" color="white" variant="elevated">
+            <v-card v-for="blog in blogsObject" :key="blog.title" class="mb-4" variant="tonal">
                 <v-card-title>
                     {{ blog.title }}
                 </v-card-title>
@@ -41,7 +31,7 @@ const blogsObject = [
                     {{ blog.content }}
                 </v-card-text>
                 <v-card-actions>
-                    <v-btn :to="`/blogs/${blog.route}`" text color="primary">Read More</v-btn>
+                    <v-btn :to="`/blogs/${blog.route}`" text color="black">Read More</v-btn>
                 </v-card-actions>
             </v-card>
         </div>

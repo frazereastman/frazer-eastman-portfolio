@@ -15,7 +15,7 @@ const props = defineProps({
 
 const isLightMode = computed(() => {
     const currentRoute = router.currentRoute.value.path;
-    return currentRoute === '/blogs';
+    return currentRoute.includes('/blogs') || currentRoute.includes('/projects');
 })
 
 const drawer = ref(false)
