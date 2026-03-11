@@ -25,6 +25,13 @@ const goToContactRoute = () => {
 }
 
 const goToHomeRoute = () => {
+    const currentRoute = router.currentRoute.value.path
+
+    if (currentRoute === '/') {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+        return
+    }
+
     router.push('/')
 }
 

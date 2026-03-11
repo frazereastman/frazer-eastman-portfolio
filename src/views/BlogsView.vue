@@ -19,7 +19,7 @@ const blogsObject = blogPosts;
             ideas, explore better ways of building software, and contribute back 
             to the developer community.
         </p>
-        <div>
+        <div class="hover:scale-[1.02] transition-transform duration-200">
             <v-card v-for="blog in blogsObject" :key="blog.title" class="mb-4" variant="tonal">
                 <v-card-title>
                     {{ blog.title }}
@@ -31,7 +31,9 @@ const blogsObject = blogPosts;
                     {{ blog.content }}
                 </v-card-text>
                 <v-card-actions>
-                    <v-btn :to="`/blogs/${blog.route}`" text color="black">Read More</v-btn>
+                    <v-btn :to="`/blogs/${blog.route}`" text color="black">
+                        Read More
+                    </v-btn>
                 </v-card-actions>
             </v-card>
         </div>
