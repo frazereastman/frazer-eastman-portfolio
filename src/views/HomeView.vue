@@ -50,7 +50,6 @@ import homeBodyText from '../components/home/HomeBodyText.vue'
 import homeCTAButton from '../components/home/HomeCTAButton.vue'
 import devSkills from '../components/devSkills/DevSkills.vue'
 import aboutSection from '../components/about/AboutSection.vue'
-import { space } from 'postcss/lib/list'
 </script>
 
 <style scoped>

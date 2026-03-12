@@ -76,14 +76,6 @@ const goToContactRoute = () => {
     });
 }
 
-const goToHomeRoute = () => {
-    router.push('/')
-}
-
-const goToMyWorkRoute = () => {
-    router.push('/my-work')
-}
-
 const goToProjectsRoute = () => {
     router.push('/projects')
 }

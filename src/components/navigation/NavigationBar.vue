@@ -20,10 +20,6 @@ const isLightMode = computed(() => {
 
 const drawer = ref(false)
 
-const goToContactRoute = () => {
-    router.push('/contact')
-}
-
 const goToHomeRoute = () => {
     const currentRoute = router.currentRoute.value.path
 
@@ -33,18 +29,6 @@ const goToHomeRoute = () => {
     }
 
     router.push('/')
-}
-
-const goToMyWorkRoute = () => {
-    router.push('/my-work')
-}
-
-const goToBlogRoute = () => {
-    router.push('/blogs')
-} 
-
-const goToAboutRoute = () => {
-    router.push('/about-me')
 }
 
 watch(width, (newWidth) => {
