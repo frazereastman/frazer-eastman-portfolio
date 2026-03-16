@@ -3,7 +3,7 @@
         <h1 class="font-bold text-5xl mb-3 pt-4">
             About Me.
         </h1>
-        <p class="font-semibold">
+        <p class="font-semibold mb-8">
             Originally from a small town just outside London, I now live and 
             work in Sheffield — where I spend my time building things for the 
             web and enthusiastically talking about them to anyone who'll listen.
@@ -34,10 +34,24 @@
             I build things. I talk about them. I make them accessible. And I 
             enjoy the challenge every step of the way.
         </p>
+        <v-expansion-panels>
+            <v-expansion-panel>
+                <v-expansion-panel-title>
+                    <h2 class="text-3xl font-bold">
+                        Timeline.
+                    </h2>
+                </v-expansion-panel-title>
+                <v-expansion-panel-text>
+                    <about-timeline />
+                </v-expansion-panel-text>
+                </v-expansion-panel>
+        </v-expansion-panels>
     </section>
 </template>
 
 <script setup>
+import { timelineDetails } from '@/constants/constants';
+
 
 </script>
 

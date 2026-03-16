@@ -25,6 +25,7 @@
                         color="white"
                         class="mt-4 mr-4"
                         size="x-large"
+                        to="/blogs"
                     >
                         read blog
                     </v-btn>
@@ -33,6 +34,7 @@
                         color="white"
                         class="mt-4"
                         size="x-large"
+                        :to="`/blogs/${featuredBlogRoute}`"
                     >
                         see all blogs
                     </v-btn>
@@ -60,6 +62,7 @@
                         color="white"
                         class="mt-4 mr-4"
                         size="x-large"
+                        :to="`/projects/${featuredProjectRoute}`"
                     >
                         read more
                     </v-btn>
@@ -68,6 +71,7 @@
                         color="white"
                         class="mt-4"
                         size="x-large"
+                        to="/projects"
                     >
                         see all projects
                     </v-btn>
@@ -78,6 +82,8 @@
 </template>
 
 <script setup>
+import { featuredBlogRoute } from '@/data/blogPosts';
+import { featuredProjectRoute } from '@/data/projects';
 
 </script>
 

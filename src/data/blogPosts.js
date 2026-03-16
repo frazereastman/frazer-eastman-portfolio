@@ -6,3 +6,5 @@ export const blogPosts = [
     route: "accessibility-first-development",
   },
 ];
+
+export const featuredBlogRoute = "accessibility-first-development";

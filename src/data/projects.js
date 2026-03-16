@@ -6,3 +6,5 @@ export const projects = [
 		route: 'accessibility-audit',
 	},
 ];
+
+export const featuredProjectRoute = 'accessibility-audit';
