@@ -25,7 +25,7 @@
                         color="white"
                         class="mt-4 mr-4"
                         size="x-large"
-                        to="/blogs"
+                        :to="`/blogs/${featuredBlogRoute}`"
                     >
                         read blog
                     </v-btn>
@@ -34,7 +34,7 @@
                         color="white"
                         class="mt-4"
                         size="x-large"
-                        :to="`/blogs/${featuredBlogRoute}`"
+                        to="/blogs"
                     >
                         see all blogs
                     </v-btn>
