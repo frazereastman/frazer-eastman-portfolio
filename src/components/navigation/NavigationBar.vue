@@ -18,6 +18,11 @@ const isLightMode = computed(() => {
     return currentRoute.includes('/blogs') || currentRoute.includes('/projects');
 })
 
+const isForceDarkMode = computed(() => {
+    const currentRoute = router.currentRoute.value.path;
+    return currentRoute.includes('/resume');
+})
+
 const drawer = ref(false)
 
 const goToHomeRoute = () => {
@@ -46,7 +51,7 @@ watch(width, (newWidth) => {
     >
         <div 
             class="flex justify-between p-4 my-4 w-full items-center"
-            :class="transparent ? 'bg-transparent' : 'home-bg'"
+            :class="[transparent ? 'bg-transparent' : 'home-bg', isForceDarkMode ? 'bg-black' : '']"
         >
             <img 
                 src="../../assets/website-logo-no-bg.svg" 
@@ -69,7 +74,7 @@ watch(width, (newWidth) => {
                 temporary
                 location="right"
                 rounded
-                style="height: 120px;"
+                style="height: 160px;"
             >
                 <navigation-buttons />
             </v-navigation-drawer>

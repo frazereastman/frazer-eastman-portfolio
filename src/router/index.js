@@ -5,6 +5,7 @@ import MyWorkView from '../views/MyWorkView.vue';
 import AboutMeView from '../views/AboutMeView.vue';
 import BlogsView from '../views/BlogsView.vue';
 import BlogPageView from '@/views/BlogPageView.vue';
+import ResumeView from '../views/ResumeView.vue';
 
 const routes = [
 	{
@@ -40,6 +41,11 @@ const routes = [
 		path: '/projects/:name',
 		name: 'project-detail',
 		component: () => import('@/views/ProjectPageView.vue'),
+	},
+	{
+		path: '/resume',
+		name: 'resume',
+		component: ResumeView,
 	},
 ];
 

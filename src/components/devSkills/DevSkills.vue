@@ -22,8 +22,7 @@
                 variant="outlined"
                 class="bg-white text-black rounded"
                 size="x-large"
-                href="/resume.pdf"
-                target="_blank"
+                to="/resume"
             >
                 Resume
             </v-btn>
