@@ -4,6 +4,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
+        class="hover:scale-105 transition-transform duration-200"
         :class="isLightMode ? 'button-text-dark' : 'button-text'"
         @click="goToAboutRoute()"
     >
@@ -12,6 +13,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
+        class="hover:scale-105 transition-transform duration-200"
         :class="isLightMode ? 'button-text-dark' : 'button-text'"
         @click="goToProjectsRoute()"
     >
@@ -20,6 +22,7 @@
     <v-btn 
         variant="text"
         aria-label="My Work"
+        class="hover:scale-105 transition-transform duration-200"
         :class="isLightMode ? 'button-text-dark' : 'button-text'"
         @click="goToBlogRoute()"
     >
@@ -31,7 +34,7 @@
             variant="outlined"
             :append-icon="isHovering ? 'mdi-email-open-outline' : 'mdi-email-outline'"
             aria-label="Contact Me"
-            class="button-text mx-4 md:mx-0 bg-white text-black rounded"
+            class="button-text mx-4 md:mx-0 bg-white text-black rounded hover:scale-105 transition-transform duration-200"
             rounded="0"
             @click="goToContactRoute()"
         >
